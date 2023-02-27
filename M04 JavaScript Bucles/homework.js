@@ -105,6 +105,10 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 5, retorna "buzz".
    // De lo contrario, retorna el número.
    // Tu código:
+   if (num % 3 == 0 && num % 5 == 0) return 'fizzbuzz';
+   else if (num % 3 == 0) return 'fizz';
+   else if (num % 5 == 0) return 'buzz';
+   else return num;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -115,6 +119,11 @@ function operadoresLogicos(num1, num2, num3) {
    // Si alguno de los argumentos es cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
+   if (num1 > num2 && num1 > num3 && num1 > 1) return 'Numero 1 es mayor y positivo';
+   else if (num1 < 0 || num2 < 0 || num3 < 0) return 'Hay negativos';
+   else if (num3 > num1 && num3 > num2 ) return num3 + 1;
+   else if (num1 == 0 || num2 ==0 || num3 == 0);
+   else return 'false';
 }
 
 function esPrimo(num) {
@@ -124,18 +133,31 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+   for (var i = 2; i = num; i++){
+      if (num % i == 0 && i < num){
+      return 'false';
+      break;
+      }
+      else if (num % 1 == 0 && i == num) return 'true';
+      else return 'false';
+   }
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+if (valor == verdadero) return 'Soy veradero';
+else return 'Soy falso';
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
+   if (num < 100 || num > 1000 || num == 1000) return false;
+   else return true;
+   
 }
 
 function doWhile(num) {
@@ -143,6 +165,12 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   do {
+      var i=0
+      i=i+1;
+      num = num + i*5
+   }while (i<5);
+   return num;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
