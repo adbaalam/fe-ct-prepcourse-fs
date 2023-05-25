@@ -13,9 +13,8 @@ function tienenMismaLongitud(str1, str2) {
    // Retorna True si los dos strings tienen la misma longitud.
    // De lo contrario, retorna False.
    // Tu código:
-   if (str1.length=str2.length) 
+   if (str1.length==str2.length) 
    return true;
-   
    else return false;
 }
 
@@ -47,7 +46,7 @@ function esImpar(num) {
    // Retorna True si "num" es impar.
    // De lo contrario, retorna False.
    // Tu código:
-   if(!num%2==0) return true;
+   if( num % 2 !== 0) return true;
    else return false;
 }
 
